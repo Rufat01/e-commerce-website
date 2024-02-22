@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <div>
-        last version of site
+        develop version
     </div>
   )
 }
