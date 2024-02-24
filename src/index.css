@@ -8,3 +8,15 @@
   box-sizing: border-box;
   user-select: none;
 }
+
+.slick-current{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.slick-slide{
+  display: flex !important;
+  justify-content: center;
+}
