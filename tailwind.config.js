@@ -3,10 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      sm: {'max':'991px' }, // Mobile
-
-
-      lg: { 'min': "992px" }, // NoteBook and PC
+      sm: {'max':'767px' }, // Mobile
+      md: {'min':'768px', 'max':'1024px' }, // Tablet
+      lg: { 'min': "1025px"}, // NoteBook and PC
+    },
+    fontFamily: {
+      'main': ['Anton', 'serif']
     },
     extend: {},
   },
