@@ -23,16 +23,16 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="w-full h-[88px] px-[200px] sm:p-0">
-      <nav className="px-6 max-w-[1440px] my-0 mx-auto flex items-center justify-between h-[88px] gap-[90px] sm:bg-[#313638]">
+    <header className="w-full h-[88px] lg:px-[100px] sm:p-0">
+      <nav className="px-6 max-w-[1440px] my-0 mx-auto flex items-center justify-between h-[88px] gap-[90px] sm:bg-[#313638] md:bg-[#313638]">
         <div className="flex items-center">
-          <h1 className="font-bold text-[24px] mr-[90px] sm:text-gray-400">
+          <h1 className="font-main text-[24px] mr-[90px] sm:text-gray-400 md:text-gray-400">
             <span className="text-red-400">S</span>porty
           </h1>
           <ul
             className={`${
               menu ? "top-[87px]" : "top-[-500px]"
-            } flex lg:gap-[90px] sm:flex-col sm:gap-0 sm:bg-gray-200 sm:absolute right-0 sm:w-full sm:h-auto sm:text-[30px] sm:items-center transition-all duration-700 :hidden`}
+            } flex lg:gap-[90px] sm:flex-col sm:gap-0 md:absolute md:flex-col md:left-0 md:bg-gray-200/80 sm:bg-gray-100/80 sm:backdrop-blur-sm md:backdrop-blur-sm z-10 sm:absolute right-0 sm:w-full sm:h-auto sm:text-[30px] sm:items-center transition-all duration-700`}
           >
             {navLinks.map((link) => (
               <NavLink link={link.value} key={link.value} />
@@ -58,14 +58,14 @@ const Header = () => {
               </div>
               <a
                 href="#"
-                className=" mb-4 text-[16px] bg-red-400 w-full font-semibold text-white text-center py-4 rounded-lg px-6 transition-all duration-300 hover:text-white hover:bg-red-500"
+                className=" mb-4 text-[16px] bg-red-400 w-full md:w-[30%] font-semibold text-white text-center py-4 rounded-lg px-6 transition-all duration-300 hover:text-white hover:bg-red-500"
               >
                 Login
               </a>
             </div>
           </ul>
         </div>
-        <div className="flex sm:hidden :hidden">
+        <div className="flex sm:hidden md:hidden">
           <form>
             <input
               type="text"
@@ -95,7 +95,7 @@ const Header = () => {
           onClick={() => setMenu((o) => !o)}
           className={`${
             menu ? "items-start" : "items-end"
-          } sm:flex flex-col sm:block :flex lg:hidden gap-2`}
+          } sm:flex md:flex flex-col lg:hidden gap-2`}
         >
           <span className="w-8 h-[3px] rounded-full bg-white"></span>
           <span className="w-6 h-[3px] rounded-full bg-white"></span>
@@ -110,7 +110,7 @@ const NavLink = ({ link }) => {
   return (
     <a
       href="#"
-      className="sm:p-4 flex items-center justify-center sm:gap-2 text-sm sm:text-[16px] sm:w-full font-semibold transition-all duration-300 hover:text-red-400"
+      className="sm:p-4 md:text-xl md:p-4 flex items-center justify-center sm:gap-2 text-sm sm:text-[16px] sm:w-full font-semibold transition-all duration-300 hover:text-red-400"
     >
       {link}
     </a>
