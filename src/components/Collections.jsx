@@ -3,6 +3,7 @@ import Collection1 from "../assets/collectionV1.png";
 import Collection2 from "../assets/collectionV2.png";
 import Collection3 from "../assets/collectionV3.png";
 
+
 const data = [
   {
     id: 1,
@@ -24,7 +25,7 @@ const data = [
 const Collections = () => {
   return (
     <div className="sm:px-5 md:px-5">
-      <div className="max-w-[1440px] mx-auto">
+      <div>
         <h1 className="font-main text-[50px] text-center sm:text-start sm:w-[265px] mb-16 sm:mb-12">
           Collection for <span className="text-[#F14649]">you</span>
         </h1>

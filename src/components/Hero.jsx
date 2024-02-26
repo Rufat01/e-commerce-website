@@ -3,7 +3,7 @@ import HeroShoes from '../assets/hero-shoes.png'
 const Hero = () => {
   return (
     <div className="sm:px-5 lg:px-[50px]">
-      <div className="max-w-[1440px] my-0 mx-auto grid grid-cols-[1fr_510px] grid-rows-[690px_160px] md:grid-rows-[450px] md:grid-cols-[1fr_300px] sm:flex sm:flex-col">
+      <div className="grid grid-cols-[1fr_510px] grid-rows-[690px_160px] md:grid-rows-[450px] md:grid-cols-[1fr_300px] sm:flex sm:flex-col">
         <div className="flex flex-col md:justify-center lg:justify-center lg:pl-20 md:pl-5">
             <p className="font-semibold text-[#6E6359] text-lg mb-4 sm:order-2 sm:w-[250px] sm:mb-[80px]">Сomfortable <span className="text-[#F14649]">shoes</span> Сomfortable <span className="text-[#F14649]">road</span></p>
             <h1 className="font-main text-[120px] md:text-[60px] mb-4 lg:w-[440px] lg:leading-[140px] sm:text-[50px] sm:order-1 sm:mt-8 sm:mb-2">Styles for <span className="text-[#F14649]">you</span></h1>
