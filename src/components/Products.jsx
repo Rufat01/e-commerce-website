@@ -46,7 +46,7 @@ const details = [
 const Products = () => {
   return (
     <div className="lg:px-[50px] md:px-5">
-      <div className="max-w-[1440px] mt-[96px] mx-auto sm:mt-16">
+      <div className="mt-[96px] sm:mt-16">
         <h1 className="font-main text-center text-[50px] mb-16 sm:mb-8 sm:text-start sm:ml-5">
           <span className="text-[#F14649]">New</span> Arrivals
         </h1>
