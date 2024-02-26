@@ -143,7 +143,7 @@ const Sneaker = ({ sneaker }) => {
 
 const BestSneakers = () => {
   return (
-    <div className="mt-[200px] sm:mt-24 md:mt-24 mb-[105px]">
+    <div className="mt-[200px] sm:mt-24 md:mt-24 mb-[105px] sm:mb-24">
       <h1 className="font-main text-[50px] text-center sm:text-start sm:px-5 mb-16 sm:mb-10">
         Bestseller This <span className="text-[#F14649]">Week</span>
       </h1>
