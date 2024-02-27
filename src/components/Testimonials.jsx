@@ -73,7 +73,7 @@ function Responsive() {
     ],
   };
   return (
-    <div className="slider-container lg:px-[200px]">
+    <div className="slider-container lg:px-[200px] overflow-x-hidden">
       <Slider {...settings}>
         {data.map((item) => (
           <Testimonial key={item} testimonial={item.item} />
