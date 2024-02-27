@@ -22,7 +22,7 @@ const data = [
 
 const Services = () => {
   return (
-    <div className="mt-[160px] sm:mt-[80px] py-[25px] px-[55px] sm:px-5 md:px-5">
+    <div className="mt-[160px] sm:mt-[80px] py-[25px] px-[55px] sm:px-5 md:px-5 mb-24">
       <h1 className="font-main text-[50px] text-center sm:text-start mb-16">
         <span className="text-[#F14649]">Why</span> Choose Us
       </h1>
