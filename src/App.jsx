@@ -6,17 +6,19 @@ import Hero from "./components/Hero"
 import Products from "./components/Products"
 import Services from "./components/Services"
 import Testimonials from "./components/Testimonials"
+import Shoes from "./pages/Shoes"
 
 const App = () => {
   return (
     <div className="max-w-[1440px] mx-auto my-0">
         <Header />
-            <Hero />
+            {/* <Hero />
             <Products />
             <Collections />
             <Services />
             <Testimonials />
-            <Discount />
+            <Discount /> */}
+            <Shoes /> {/* Shop Page!*/}
         <Footer />
     </div>
   )
