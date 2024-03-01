@@ -100,7 +100,7 @@ const Responsive = () => {
   );
 };
 
-const Sneaker = ({ sneaker }) => {
+export const Sneaker = ({ sneaker }) => {
   const [icon, setIcon] = useState(false);
 
   return (

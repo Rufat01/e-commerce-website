@@ -23,7 +23,7 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="w-full h-[88px] lg:px-[100px] sm:p-0">
+    <header className="border-b w-full h-[88px] lg:px-[100px] sm:p-0">
       <nav className="px-6 flex items-center justify-between h-[88px] gap-[90px] sm:bg-[#313638] md:bg-[#313638]">
         <div className="flex items-center">
           <h1 className="font-main text-[24px] mr-[90px] sm:text-gray-400 md:text-gray-400">
