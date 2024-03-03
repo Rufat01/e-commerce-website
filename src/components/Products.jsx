@@ -57,7 +57,7 @@ const Products = () => {
   );
 };
 
-const Responsive = () => {
+export const Responsive = () => {
   var settings = {
     dots: false,
     infinite: true,
@@ -73,10 +73,10 @@ const Responsive = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
           autoplaySpeed: 3000,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -104,7 +104,7 @@ export const Sneaker = ({ sneaker }) => {
   const [icon, setIcon] = useState(false);
 
   return (
-    <div className="w-[282px] sm:w-[355px] md:w-[355px]">
+    <div className="w-[282px] sm:w-[350px] md:w-[355px]">
       <div className="relative w-full h-[276px] bg-[#E5E5E5]/50 flex items-center justify-center mb-6">
         <img
           src={sneaker.image}
