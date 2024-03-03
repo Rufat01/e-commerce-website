@@ -1,7 +1,7 @@
 import { Sneaker } from "./Products";
 import ElectronShoes from "../assets/product.png";
 import SuperShoes from "../assets/super.png";
-import PorcheShoes from "../assets/porche.png";
+import PorcheShoes from "../assets/porche.png"; 
 import ElectronShoes2 from "../assets/electron.png";
 import PumaShoes from "../assets/puma.png";
 import ReebokShoes from "../assets/reebok.png";

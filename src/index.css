@@ -2,20 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   user-select: none;
 }
 
-.slick-current{
+/* .slick-current{
   display: flex !important;
   justify-content: center;
   align-items: center;
+} */
+
+.slick-list {
+  margin: 0 -15px;
 }
 
+.slick-slide > div {
+  padding: 0 15px;
+}
+
+/* 
 .slick-slide{
   display: flex !important;
   justify-content: center;
+}   */
+
+
+@media (max-width: 767px) {
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+  }
+  .slick-current {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+} 
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+  }
+  .slick-current {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
 }
