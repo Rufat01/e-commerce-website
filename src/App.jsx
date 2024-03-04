@@ -6,6 +6,7 @@ import Hero from "./components/Hero"
 import Products from "./components/Products"
 import Services from "./components/Services"
 import Testimonials from "./components/Testimonials"
+import Cart from "./pages/Cart"
 import ProductDetails from "./pages/ProductDetails"
 import Shoes from "./pages/Shoes"
 
@@ -16,17 +17,18 @@ const App = () => {
 
           {/* Components */}
 
-            <Hero />
+            {/* <Hero />
             <Products />
             <Collections />
             <Services />
             <Testimonials />
-            <Discount />
+            <Discount /> */}
 
             {/* Pages */}
 
             {/* <Shoes /> Shop Page! */}
-            {/* <ProductDetails /> Product Details Page */}
+            {/* <ProductDetails /> Product Details */}
+            <Cart />
 
         <Footer />
     </div>
