@@ -8,6 +8,7 @@ import Services from "./components/Services"
 import Testimonials from "./components/Testimonials"
 import Cart from "./pages/Cart"
 import Favorite from "./pages/Favorite"
+import Payment from "./pages/Payment"
 import ProductDetails from "./pages/ProductDetails"
 import Shoes from "./pages/Shoes"
 
@@ -30,7 +31,8 @@ const App = () => {
             {/* <Shoes /> Shop Page */}
             {/* <ProductDetails /> Product Details Page */}
             {/* <Cart /> Cart Page*/}
-            <Favorite />
+            {/* <Favorite /> Favorite Page */}
+            <Payment />
 
         <Footer />
     </div>
