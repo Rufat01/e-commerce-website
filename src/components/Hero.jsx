@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import HeroShoes from '../assets/hero-shoes.png'
 
 const Hero = () => {
@@ -8,7 +9,7 @@ const Hero = () => {
             <p className="font-semibold text-[#6E6359] text-lg mb-4 sm:order-2 sm:w-[250px] sm:mb-[80px]">Сomfortable <span className="text-[#F14649]">shoes</span> Сomfortable <span className="text-[#F14649]">road</span></p>
             <h1 className="font-main text-[120px] md:text-[60px] mb-4 lg:w-[440px] lg:leading-[140px] sm:text-[50px] sm:order-1 sm:mt-8 sm:mb-2">Styles for <span className="text-[#F14649]">you</span></h1>
             <span className="font-bold text-[#6E6359] text-[16px] mb-10 sm:order-4">We work for quality. We are multibrand</span>
-            <button className="py-3 px-4 text-white text-2xl bg-[#313638] font-main rounded-lg w-[150px] transition-all duration-300 hover:bg-black sm:hidden">Shop now</button>
+            <Link to="/shop" className="py-3 px-4 text-white text-2xl bg-[#313638] font-main text-center rounded-lg w-[150px] transition-all duration-300 hover:bg-black sm:hidden">Shop now</Link>
             <div className="bg-[#F14649] relative flex items-center sm:h-[200px] sm:mb-6 lg:hidden md:hidden sm:order-3">
                 <img className='sm:absolute bottom-[-10px] left-7 sm:order-3 w-[280px]' src={HeroShoes} alt="" />
             </div>
