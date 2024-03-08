@@ -2,19 +2,24 @@ import searchIcon from "../assets/search-icon.svg";
 import basketIcon from "../assets/basket-icon.svg";
 import favoriteIcon from "../assets/favorite-icon.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   {
     value: "Home",
+    link: '/'
   },
   {
     value: "Shop",
+    link: '/shop'
   },
   {
     value: "Blogs",
+    link: '#'
   },
   {
     value: "Order Tracking",
+    link: '#'
   },
 ];
 
@@ -26,16 +31,16 @@ const Header = () => {
     <header className="border-b w-full h-[88px] lg:px-[100px] sm:p-0">
       <nav className="px-6 flex items-center justify-between h-[88px] gap-[90px] sm:bg-[#313638] md:bg-[#313638]">
         <div className="flex items-center">
-          <h1 className="font-main text-[24px] mr-[90px] sm:text-gray-400 md:text-gray-400">
+          <Link to='/' className="font-main text-[24px] mr-[90px] sm:text-gray-400 md:text-gray-400 cursor-pointer">
             <span className="text-red-400">S</span>porty
-          </h1>
+          </Link>
           <ul
             className={`${
               menu ? "top-[87px]" : "top-[-500px]"
             } flex lg:gap-[90px] sm:flex-col sm:gap-0 md:absolute md:flex-col md:left-0 md:bg-gray-200/80 sm:bg-gray-100/80 sm:backdrop-blur-sm md:backdrop-blur-sm z-10 sm:absolute right-0 sm:w-full sm:h-auto sm:text-[30px] sm:items-center transition-all duration-700`}
           >
             {navLinks.map((link) => (
-              <NavLink link={link.value} key={link.value} />
+              <NavLink link={link} key={link.value} />
             ))}
             <div className="flex flex-col items-center gap-4 lg:hidden">
               <form className="flex items-center">
@@ -53,8 +58,12 @@ const Header = () => {
                   alt=""
                   onClick={() => setSearch((s) => !s)}
                 />
-                <img src={basketIcon} className="lg:pr-5 sm:w-7" alt="" />
-                <img src={favoriteIcon} className="sm:w-7" alt="" />
+                <Link to="/cart">
+                  <img src={basketIcon} className="sm:w-7" alt="" />
+                </Link>
+                <Link to="/favorites">
+                  <img src={favoriteIcon} className="sm:w-7" alt="" />
+                </Link>
               </div>
               <a
                 href="#"
@@ -65,7 +74,7 @@ const Header = () => {
             </div>
           </ul>
         </div>
-        <div className="flex sm:hidden md:hidden">
+        <div className="flex items-center sm:hidden md:hidden">
           <form>
             <input
               type="text"
@@ -87,8 +96,12 @@ const Header = () => {
           >
             Login
           </a>
+          <Link to="/cart">
           <img src={basketIcon} className="pr-5" alt="" />
+          </Link>
+          <Link to="/favorites">
           <img src={favoriteIcon} alt="" />
+          </Link>
         </div>
 
         <div
@@ -108,12 +121,12 @@ const Header = () => {
 
 const NavLink = ({ link }) => {
   return (
-    <a
-      href="#"
+    <Link
+      to={link.link}
       className="sm:p-4 md:text-xl md:p-4 flex items-center justify-center sm:gap-2 text-sm sm:text-[16px] sm:w-full font-semibold transition-all duration-300 hover:text-red-400"
     >
-      {link}
-    </a>
+      {link.value}
+    </Link>
   );
 };
 

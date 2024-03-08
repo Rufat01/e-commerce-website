@@ -2,26 +2,33 @@
 import Facebook from "../assets/facebook.svg"
 import Whatsapp from "../assets/whatsapp.svg"
 import Instagram from "../assets/instagram.svg"
+import { Link, Navigate } from "react-router-dom";
 
 
 const navLinks = [
   {
     value: "Home",
+    link: '/'
   },
   {
     value: "Shop",
+    link: '/shop'
   },
   {
     value: "Blogs",
+    link: '#'
   },
   {
     value: "Order Tracking",
+    link: '#'
   },
   {
     value: "Wishlist",
+    link: '/favorites'
   },
   {
     value: "Basket",
+    link: '/cart'
   },
 ];
 
@@ -52,7 +59,7 @@ const Footer = () => {
       <div>
         <ul className="flex flex-col gap-2 sm:mb-8 sm:gap-4 md:gap-3">
           {navLinks.map((link) => (
-            <NavLink link={link.value} key={link.value} />
+            <NavLink link={link} key={link.value} />
           ))}
         </ul>
       </div>
@@ -82,8 +89,8 @@ const Footer = () => {
 
 const NavLink = ({ link }) => {
   return (
-    <a href="#" className="text-sm font-semibold text-black/60 transition-all duration-300 hover:text-[#F14649] hover:ml-1">
-      {link}
+    <a href={link.link} className="text-sm font-semibold text-black/60 transition-all duration-300 hover:text-[#F14649] hover:ml-1">
+      {link.value}
     </a>
   );
 };

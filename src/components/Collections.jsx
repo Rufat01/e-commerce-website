@@ -2,6 +2,7 @@ import Arrow from "../assets/rarrow.svg";
 import Collection1 from "../assets/collectionV1.png";
 import Collection2 from "../assets/collectionV2.png";
 import Collection3 from "../assets/collectionV3.png";
+import { Link } from "react-router-dom";
 
 
 const data = [
@@ -41,7 +42,7 @@ const Collections = () => {
 
 const Collection = ({item}) => {
   return (
-      <div className="w-[385px] h-[575px] md:h-[400px] rounded-lg sm:px-4 relative">
+      <a href="/shop" className="w-[385px] h-auto md:h-[400px] rounded-lg sm:px-4 relative">
         <img
           className="block w-full h-full object-cover rounded-lg mb-6"
           src={item.image}
@@ -51,7 +52,7 @@ const Collection = ({item}) => {
           <h1 className="text-2xl font-main text-[#6E6359]">{item.category}</h1>
           <img className="w-2" src={Arrow} alt="" />
         </div>
-      </div>
+      </a>
   );
 };
 
